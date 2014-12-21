@@ -2,7 +2,7 @@
 (when (>= emacs-major-version 24)
   (require 'package)
   (package-initialize)
-  )
+)
 
 ; gets rid of the blinking cursor because I hate it
 (blink-cursor-mode 0)
@@ -23,3 +23,5 @@
 
 ;; windows open when you close are opened on next open
 (desktop-save-mode t)
+;; prevents emacs from becoming slow from having a lot of files to load from desktop-save-mode
+(desktop-restore-eager 5)
