@@ -21,3 +21,5 @@
 		  (lambda ()
 			(define-key prog-mode-map "{" 'electric-pair)))
 
+;; windows open when you close are opened on next open
+(desktop-save-mode t)
