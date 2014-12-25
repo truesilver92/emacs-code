@@ -24,4 +24,17 @@
 ;; windows open when you close are opened on next open
 (desktop-save-mode t)
 ;; prevents emacs from becoming slow from having a lot of files to load from desktop-save-mode
-(desktop-restore-eager 5)
+(setq desktop-restore-eager 10)
+
+;; helm and async setup
+(add-to-list 'load-path "/home/joel/.emacs.d/helm")
+(add-to-list 'load-path "/home/joel/.emacs.d/emacs-async")
+(require 'helm-config)
+
+(when (require 'dired-aux)
+  (require 'dired-async))
+
+;; helm implement
+(global-set-key [?\M-x] 'helm-M-x)
+(helm-mode 1)
+
