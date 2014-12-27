@@ -57,5 +57,6 @@
       helm-scroll-amount                    8 ; scroll 8 lines other window using M-<next>/M-<prior>
       helm-ff-file-name-history-use-recentf t)
 (setq helm-M-x-fuzzy-match t) ;; optional fuzzy matching for helm-M-x
+(global-set-key (kbd "M-y") 'helm-show-kill-ring); show kill ring command
 (helm-mode 1)
 
