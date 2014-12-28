@@ -58,5 +58,27 @@
       helm-ff-file-name-history-use-recentf t)
 (setq helm-M-x-fuzzy-match t) ;; optional fuzzy matching for helm-M-x
 (global-set-key (kbd "M-y") 'helm-show-kill-ring); show kill ring command
+(global-set-key (kbd "C-x b") 'helm-mini)
+(setq helm-buffers-fuzzy-matching t
+      helm-recentf-fuzzy-match    t)
+(global-set-key (kbd "C-x C-f") 'helm-find-files) ; replace for find file
+;; use a better grep
+(when (executable-find "ack-grep")
+  (setq helm-grep-default-command "ack-grep -Hn --no-group --no-color %e %p %f"
+        helm-grep-default-recurse-command "ack-grep -H --no-group --no-color %e %p %f"))
 (helm-mode 1)
-
+(semantic-mode 1)
+;; set fuzzy match for semantic definition finding
+(setq helm-semantic-fuzzy-match t
+      helm-imenu-fuzzy-match    t)
+;; get man page under point
+(add-to-list 'helm-sources-using-default-as-input 'helm-source-man-pages)
+(setq helm-locate-fuzzy-match t)
+;; set occur command to a better key combo
+(global-set-key (kbd "C-c h o") 'helm-occur)
+(setq helm-apropos-function-list t)
+(setq helm-lisp-fuzzy-completion t)
+;; show all of the mark ring
+(global-set-key (kbd "C-h SPC") 'helm-all-mark-rings)
+;; set register key to be better
+(global-set-key (kbd "C-c h x") 'helm-register)
