@@ -82,3 +82,46 @@
 (global-set-key (kbd "C-h SPC") 'helm-all-mark-rings)
 ;; set register key to be better
 (global-set-key (kbd "C-c h x") 'helm-register)
+;; set helm eval to be more consistent in key chords
+(global-set-key (kbd "C-c h M-:") 'helm-eval-expression-with-eldoc)
+;; retrieve old eshell commands
+(require 'helm-eshell)
+(add-hook 'eshell-mode-hook
+          #'(lambda ()
+              (define-key eshell-mode-map (kbd "C-c C-l")  'helm-eshell-history)))
+(define-key shell-mode-map (kbd "C-c C-l") 'helm-comint-input-ring)
+(define-key minibuffer-local-map (kbd "C-c C-l") 'helm-minibuffer-history)
+;; helm lookup keybind
+(require 'helm-descbinds)
+(helm-descbinds-mode)
+;; ggtags setup
+(require 'ggtags)
+(add-hook 'c-mode-common-hook
+          (lambda ()
+            (when (derived-mode-p 'c-mode 'c++-mode 'java-mode 'asm-mode)
+              (ggtags-mode 1))))
+(define-key ggtags-mode-map (kbd "C-c g s") 'ggtags-find-other-symbol)
+(define-key ggtags-mode-map (kbd "C-c g h") 'ggtags-view-tag-history)
+(define-key ggtags-mode-map (kbd "C-c g r") 'ggtags-find-reference)
+(define-key ggtags-mode-map (kbd "C-c g f") 'ggtags-find-file)
+(define-key ggtags-mode-map (kbd "C-c g c") 'ggtags-create-tags)
+(define-key ggtags-mode-map (kbd "C-c g u") 'ggtags-update-tags)
+(define-key ggtags-mode-map (kbd "M-,") 'pop-tag-mark)
+(setq-local imenu-create-index-function #'moo-jump-local)
+;; company code completion
+(require 'company)
+;(require 'helm-company)
+(add-hook 'after-init-hook 'global-company-mode)
+;; semantic code completion
+(require 'cc-mode)
+(require 'semantic)
+(global-semanticdb-minor-mode 1)
+(global-semantic-idle-scheduler-mode 1)
+(semantic-mode 1)
+;; function-args
+(require 'function-args)
+(fa-config-default)
+(define-key c-mode-map  [(contrl tab)] 'moo-complete)
+(define-key c++-mode-map  [(control tab)] 'moo-complete)
+(define-key c-mode-map (kbd "M-o")  'fa-show)
+(define-key c++-mode-map (kbd "M-o")  'fa-show)
