@@ -59,7 +59,7 @@
 (setq helm-M-x-fuzzy-match t) ;; optional fuzzy matching for helm-M-x
 (global-set-key (kbd "M-y") 'helm-show-kill-ring); show kill ring command
 (global-set-key (kbd "C-x b") 'helm-mini)
-(setq helm-buffers-fuzzy-matching t
+(setq helm-buffer-fuzzy-matching t
       helm-recentf-fuzzy-match    t)
 (global-set-key (kbd "C-x C-f") 'helm-find-files) ; replace for find file
 ;; use a better grep
@@ -125,3 +125,7 @@
 (define-key c++-mode-map  [(control tab)] 'moo-complete)
 (define-key c-mode-map (kbd "M-o")  'fa-show)
 (define-key c++-mode-map (kbd "M-o")  'fa-show)
+
+;; general keyboard mapping
+(global-set-key "\C-w" 'backward-kill-word)
+(global-set-key "\C-x\C-k" 'kill-region)
