@@ -1,15 +1,3 @@
 packages to install through package manager:
-async
-helm
-undo-tree
-volatile-highlight
-yasnippet
-helm-projectile
-helm-descbinds
-ggtags
-function-args
-helm-company
 
-packages to install through apt
-ack-grep
-gtags
+geiser
