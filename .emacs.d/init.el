@@ -5,6 +5,8 @@
 (add-to-list 'package-archives
 	     '("melpa-unstable" . "http://melpa.org/packages/")
 	     '("melpa-stable" . "http://melpa-stable.org/packages/"))
+;;(add-to-list 'load-path "/home/joel/emacs-code/.emacs.d/go-mode.el/go-mode.el")
+;;(add-to-list 'load-path "/home/joel/emacs-code/.emacs.d/go-mode-load.el")
 
 (setq geiser-active-implementations '(guile))
 (package-initialize)
