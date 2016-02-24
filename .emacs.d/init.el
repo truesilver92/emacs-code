@@ -6,10 +6,11 @@
 	     '("melpa-unstable" . "http://melpa.org/packages/")
 	     '("melpa-stable" . "http://melpa-stable.org/packages/"))
 ;;(add-to-list 'load-path "/home/joel/emacs-code/.emacs.d/go-mode.el/go-mode.el")
-;;(add-to-list 'load-path "/home/joel/emacs-code/.emacs.d/go-mode-load.el")
+(add-to-list 'load-path "/home/joel/emacs-code/.emacs.d/go-mode-autoloads.el")
 
 (setq geiser-active-implementations '(guile))
 (package-initialize)
+(require 'go-mode-autoloads)
 
 ; gets rid of the blinking cursor because I hate it
 (blink-cursor-mode 0)
