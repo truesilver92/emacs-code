@@ -1,3 +1,6 @@
 packages to install through package manager:
 
 geiser
+markdown-mode
+markdown-preview-eww 
+go-mode
