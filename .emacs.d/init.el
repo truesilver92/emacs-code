@@ -3,7 +3,8 @@
 (require 'package)
 
 (add-to-list 'package-archives
-	     '("melpa-unstable" . "http://melpa.org/packages/")
+;	     '("melpa-unstable" . "http://melpa.org/packages/")
+	     '("marmalade" . "https://marmalade-repo.org/packages/")
 	     '("melpa-stable" . "http://melpa-stable.org/packages/"))
 ;;(add-to-list 'load-path "/home/joel/emacs-code/.emacs.d/go-mode.el/go-mode.el")
 ;;(add-to-list 'load-path "/home/joel/emacs-code/.emacs.d/go-mode-autoloads.el")
