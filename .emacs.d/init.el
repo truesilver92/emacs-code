@@ -9,6 +9,13 @@
 ;;(add-to-list 'load-path "/home/joel/emacs-code/.emacs.d/go-mode.el/go-mode.el")
 ;;(add-to-list 'load-path "/home/joel/emacs-code/.emacs.d/go-mode-autoloads.el")
 
+;;add all files in the git directory to the load-path
+(let ((default-directory  "~/projects/emacs-code/.emacs.d/git"))
+  (normal-top-level-add-subdirs-to-load-path))
+
+;;load the project in the git subdirectory changing some default behavior of emacs
+(require 'better-defaults)
+
 (setq geiser-active-implementations '(guile))
 (package-initialize)
 ;;(require 'go-mode-autoloads)

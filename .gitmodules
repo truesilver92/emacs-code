@@ -1,0 +1,3 @@
+[submodule ".emacs.d/git/better-defaults"]
+	path = .emacs.d/git/better-defaults
+	url = git@github.com:truesilver92/better-defaults.git
