@@ -1,3 +1,5 @@
+;; set character encoding
+(set-language-environment "UTF-8")
 (setq debug-on-error t)
 ;; init the package manager
 (require 'package)
