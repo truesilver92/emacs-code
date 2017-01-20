@@ -25,6 +25,9 @@
 ; gets rid of the blinking cursor because I hate it
 (blink-cursor-mode 0)
 
+;; multiple spaces instead of tabs by default
+(setq-default indent-tabs-mode nil)
+
 ;;(desktop-save-mode 1)
 ;;(setq desktop-restore-eager 1)
 (custom-set-variables
