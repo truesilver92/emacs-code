@@ -24,6 +24,8 @@
 
 ; gets rid of the blinking cursor because I hate it
 (blink-cursor-mode 0)
+;; I also hate it in terminal mode
+(setq visible-cursor nil)
 
 ;; multiple spaces instead of tabs by default
 (setq-default indent-tabs-mode nil)
