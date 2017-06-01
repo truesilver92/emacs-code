@@ -11,6 +11,16 @@
 ;;(add-to-list 'load-path "/home/joel/emacs-code/.emacs.d/go-mode.el/go-mode.el")
 ;;(add-to-list 'load-path "/home/joel/emacs-code/.emacs.d/go-mode-autoloads.el")
 
+;; auto install of packages I want
+(defvar my-packages '(better-defaults
+                      projectile
+                      clojure-mode
+                      cider))
+
+(dolist (p my-packages)
+  (unless (package-installed-p p)
+    (package-install p)))
+
 ;;add all files in the git directory to the load-path
 (let ((default-directory  "~/projects/emacs-code/.emacs.d/git"))
   (normal-top-level-add-subdirs-to-load-path))
@@ -39,7 +49,9 @@
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes (quote (misterioso)))
  '(desktop-path (quote (".")))
- '(package-selected-packages (quote (markdown-preview-mode go-mode geiser))))
+ '(package-selected-packages
+   (quote
+    (cider clojure-mode projectile better-defaults markdown-preview-mode go-mode geiser))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
