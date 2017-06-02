@@ -17,6 +17,8 @@
                       clojure-mode
                       cider))
 
+(package-initialize) ; so package management works
+
 (dolist (p my-packages)
   (unless (package-installed-p p)
     (package-install p)))
