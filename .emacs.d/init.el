@@ -15,7 +15,8 @@
 (defvar my-packages '(better-defaults
                       projectile
                       clojure-mode
-                      cider))
+                      cider
+                      paredit))
 
 (package-initialize) ; so package management works
 
