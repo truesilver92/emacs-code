@@ -7,3 +7,6 @@
 [submodule ".emacs.d/git/with-editor"]
 	path = .emacs.d/git/with-editor
 	url = https://github.com/magit/with-editor.git
+[submodule ".emacs.d/git/magit"]
+	path = .emacs.d/git/magit
+	url = https://github.com/magit/magit.git
