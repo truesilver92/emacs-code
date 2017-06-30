@@ -1,3 +1,6 @@
 [submodule ".emacs.d/git/better-defaults"]
 	path = .emacs.d/git/better-defaults
 	url = git@github.com:truesilver92/better-defaults.git
+[submodule ".emacs.d/git/dash"]
+	path = .emacs.d/git/dash
+	url = https://github.com/magnars/dash.el.git
