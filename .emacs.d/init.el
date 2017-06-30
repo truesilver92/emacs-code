@@ -35,7 +35,9 @@
 (require 'better-defaults)
 ;; a git porcelain
 (require 'magit)
-
+;; magit stuff
+(let ()
+ (global-set-key (kbd "C-x g") 'magit-status))
 
 ;; magit wanted this I think for its documentation
 (with-eval-after-load 'info
