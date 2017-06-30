@@ -34,7 +34,7 @@
 ;;load the project in the git subdirectory changing some default behavior of emacs
 (require 'better-defaults)
 
-(setq geiser-active-implementations '(guile))
+
 (package-initialize)
 ;;(require 'go-mode-autoloads)
 
