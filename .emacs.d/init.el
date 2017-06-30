@@ -16,7 +16,8 @@
                       projectile
                       clojure-mode
                       cider
-                      paredit))
+                      paredit
+                      geiser))
 
 (package-initialize) ; so package management works
 
