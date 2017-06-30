@@ -33,6 +33,16 @@
 
 ;;load the project in the git subdirectory changing some default behavior of emacs
 (require 'better-defaults)
+;; a git porcelain
+(require 'magit)
+
+
+;; magit wanted this I think for its documentation
+(with-eval-after-load 'info
+  (info-initialize)
+  (add-to-list 'Info-directory-list
+               "~/.emacs.d/git/magit/Documentation/"))
+
 
 
 (package-initialize)
