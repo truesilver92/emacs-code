@@ -4,3 +4,6 @@
 [submodule ".emacs.d/git/dash"]
 	path = .emacs.d/git/dash
 	url = https://github.com/magnars/dash.el.git
+[submodule ".emacs.d/git/with-editor"]
+	path = .emacs.d/git/with-editor
+	url = https://github.com/magit/with-editor.git
