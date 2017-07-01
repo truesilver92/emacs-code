@@ -10,3 +10,6 @@
 [submodule ".emacs.d/git/magit"]
 	path = .emacs.d/git/magit
 	url = https://github.com/magit/magit.git
+[submodule ".emacs.d/git/geiser"]
+	path = .emacs.d/git/geiser
+	url = https://github.com/jaor/geiser.git

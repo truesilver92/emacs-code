@@ -16,8 +16,7 @@
                       projectile
                       clojure-mode
                       cider
-                      paredit
-                      geiser))
+                      paredit))
 
 (package-initialize) ; so package management works
 
@@ -69,7 +68,7 @@
  '(desktop-path (quote (".")))
  '(package-selected-packages
    (quote
-    (cider clojure-mode projectile better-defaults markdown-preview-mode go-mode geiser))))
+    (cider clojure-mode projectile better-defaults markdown-preview-mode go-mode))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
