@@ -16,3 +16,6 @@
 [submodule "git/exec-path-from-shell"]
 	path = git/exec-path-from-shell
 	url = https://github.com/purcell/exec-path-from-shell.git
+[submodule ".emacs.d/git/exec-path-from-shell"]
+	path = .emacs.d/git/exec-path-from-shell
+	url = https://github.com/purcell/exec-path-from-shell.git
