@@ -44,6 +44,8 @@
   (add-to-list 'Info-directory-list
                "~/.emacs.d/git/magit/Documentation/"))
 
+(require 'geiser)
+
 
 
 (package-initialize)
