@@ -46,6 +46,11 @@
 
 (require 'geiser)
 
+;; this makes my ssh-agent work with magit
+(require 'exec-path-from-shell)
+(exec-path-from-shell-copy-env "SSH_AGENT_PID")
+(exec-path-from-shell-copy-env "SSH_AUTH_SOCK")
+
 
 
 (package-initialize)
