@@ -31,3 +31,6 @@
 [submodule ".emacs.d/git/paredit"]
 	path = .emacs.d/git/paredit
 	url = http://mumble.net/~campbell/git/paredit.git/
+[submodule ".emacs.d/git/spinner"]
+	path = .emacs.d/git/spinner
+	url = https://github.com/Malabarba/spinner.el.git
