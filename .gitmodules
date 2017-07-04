@@ -19,3 +19,6 @@
 [submodule ".emacs.d/git/exec-path-from-shell"]
 	path = .emacs.d/git/exec-path-from-shell
 	url = https://github.com/purcell/exec-path-from-shell.git
+[submodule ".emacs.d/git/projectile"]
+	path = .emacs.d/git/projectile
+	url = https://github.com/bbatsov/projectile.git
