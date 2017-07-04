@@ -47,9 +47,16 @@
 (exec-path-from-shell-copy-env "SSH_AGENT_PID")
 (exec-path-from-shell-copy-env "SSH_AUTH_SOCK")
 
+(require 'cider)
+
+(require 'clojure-mode)
+
+(require 'paredit)
+
+(require 'projectile)
 
 
-(package-initialize)
+;;(package-initialize)
 ;;(require 'go-mode-autoloads)
 
 ; gets rid of the blinking cursor because I hate it
