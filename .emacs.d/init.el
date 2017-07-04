@@ -12,8 +12,7 @@
 ;;(add-to-list 'load-path "/home/joel/emacs-code/.emacs.d/go-mode-autoloads.el")
 
 ;; auto install of packages I want
-(defvar my-packages '(clojure-mode
-                      cider
+(defvar my-packages '(cider
                       paredit))
 
 (package-initialize) ; so package management works
