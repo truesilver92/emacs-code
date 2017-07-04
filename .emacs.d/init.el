@@ -12,16 +12,15 @@
 ;;(add-to-list 'load-path "/home/joel/emacs-code/.emacs.d/go-mode-autoloads.el")
 
 ;; auto install of packages I want
-(defvar my-packages '(cider
-                      paredit))
+;;(defvar my-packages '(paredit))
 
-(package-initialize) ; so package management works
+;;(package-initialize) ; so package management works
 
-(package-refresh-contents)
+;;(package-refresh-contents)
 
-(dolist (p my-packages)
-  (unless (package-installed-p p)
-    (package-install p)))
+;;(dolist (p my-packages)
+;;  (unless (package-installed-p p)
+;;    (package-install p)))
 
 ;;add all files in the git directory to the load-path
 (let ((default-directory  "~/projects/emacs-code/.emacs.d/git"))

@@ -25,3 +25,9 @@
 [submodule ".emacs.d/git/clojure-mode"]
 	path = .emacs.d/git/clojure-mode
 	url = https://github.com/clojure-emacs/clojure-mode.git
+[submodule ".emacs.d/git/cider"]
+	path = .emacs.d/git/cider
+	url = https://github.com/clojure-emacs/cider.git
+[submodule ".emacs.d/git/paredit"]
+	path = .emacs.d/git/paredit
+	url = http://mumble.net/~campbell/git/paredit.git/
