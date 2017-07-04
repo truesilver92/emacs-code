@@ -22,3 +22,6 @@
 [submodule ".emacs.d/git/projectile"]
 	path = .emacs.d/git/projectile
 	url = https://github.com/bbatsov/projectile.git
+[submodule ".emacs.d/git/clojure-mode"]
+	path = .emacs.d/git/clojure-mode
+	url = https://github.com/clojure-emacs/clojure-mode.git
