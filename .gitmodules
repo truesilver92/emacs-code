@@ -37,3 +37,6 @@
 [submodule ".emacs.d/git/predictive"]
 	path = .emacs.d/git/predictive
 	url = http://www.dr-qubit.org/git/predictive.git
+[submodule ".emacs.d/git/org-mode"]
+	path = .emacs.d/git/org-mode
+	url = git://orgmode.org/org-mode.git
