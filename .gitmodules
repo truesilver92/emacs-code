@@ -86,3 +86,6 @@
 	path = .emacs.d/themes/soothe
 	url = https://github.com/emacsfodder/emacs-soothe-theme.git
 
+[submodule ".emacs.d/git/org-bullets"]
+	path = .emacs.d/git/org-bullets
+	url = https://github.com/emacsorphanage/org-bullets.git

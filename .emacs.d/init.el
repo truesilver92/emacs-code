@@ -80,6 +80,10 @@
   (add-hook 'after-init-hook 'global-company-mode)
   (global-set-key (kbd "M-\\") 'company-complete))
 
+(require 'org-bullets)
+(progn
+  (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
+
 ;;(package-initialize)
 ;;(require 'go-mode-autoloads)
 
@@ -97,7 +101,7 @@
 (setq custom-safe-themes t)
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/ample-zen/")
-;;(load-theme 'ample-zen t)
+(load-theme 'ample-zen t)
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/clues/")
 ;;(load-theme 'clues t)
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/cyberpunk/")
@@ -105,7 +109,7 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/grandshell/")
 ;;(load-theme 'grandshell t)
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/soothe/")
-(load-theme 'soothe t)
+;;(load-theme 'soothe t)
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/monokai/")
 ;;(load-theme 'monokai t)
 
