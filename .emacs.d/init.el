@@ -55,6 +55,8 @@
 
 (require 'projectile)
 
+(require 'quickrun)
+
 
 ;;(package-initialize)
 ;;(require 'go-mode-autoloads)

@@ -55,3 +55,6 @@
 [submodule ".emacs.d/git/restclient"]
 	path = .emacs.d/git/restclient
 	url = https://github.com/pashky/restclient.el.git
+[submodule ".emacs.d/git/quickrun"]
+	path = .emacs.d/git/quickrun
+	url = https://github.com/syohex/emacs-quickrun.git
