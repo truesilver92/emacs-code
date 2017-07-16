@@ -61,3 +61,6 @@
 [submodule ".emacs.d/git/expand-region"]
 	path = .emacs.d/git/expand-region
 	url = https://github.com/magnars/expand-region.el.git
+[submodule ".emacs.d/git/avy"]
+	path = .emacs.d/git/avy
+	url = https://github.com/abo-abo/avy.git

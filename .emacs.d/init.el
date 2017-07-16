@@ -67,6 +67,13 @@
 
 (require 'quickrun)
 
+(require 'avy)
+(progn
+  ;; set keybindings for the awesome search types
+  (global-set-key (kbd "C-c r") 'avy-goto-char)
+  (global-set-key (kbd "C-c s") 'avy-goto-char-2)
+  ;; set the keys to use as targets to dvorak home row
+  (setq avy-keys '(?a ?o ?e ?u ?h ?t ?n ?s)))
 
 ;;(package-initialize)
 ;;(require 'go-mode-autoloads)
