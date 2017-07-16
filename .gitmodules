@@ -67,3 +67,22 @@
 [submodule ".emacs.d/git/company-mode"]
 	path = .emacs.d/git/company-mode
 	url = https://github.com/company-mode/company-mode.git
+[submodule ".emacs.d/themes/monokai"]
+	path = .emacs.d/themes/monokai
+	url = https://github.com/oneKelvinSmith/monokai-emacs.git
+[submodule ".emacs.d/themes/cyberpunk"]
+	path = .emacs.d/themes/cyberpunk
+	url = https://github.com/n3mo/cyberpunk-theme.el.git
+[submodule ".emacs.d/themes/grandshell"]
+	path = .emacs.d/themes/grandshell
+	url = https://github.com/steckerhalter/grandshell-theme.git
+[submodule "ample-zen"]
+	path = .emacs.d/themes/ample-zen
+	url = https://github.com/mjwall/ample-zen.git
+[submodule ".emacs.d/themes/clues"]
+	path = .emacs.d/themes/clues
+	url = https://github.com/emacsfodder/emacs-clues-theme.git
+[submodule ".emacs.d/themes/soothe"]
+	path = .emacs.d/themes/soothe
+	url = https://github.com/emacsfodder/emacs-soothe-theme.git
+

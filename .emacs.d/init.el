@@ -91,23 +91,21 @@
 ;; multiple spaces instead of tabs by default
 (setq-default indent-tabs-mode nil)
 
-;;(desktop-save-mode 1)
-;;(setq desktop-restore-eager 1)
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-enabled-themes (quote (misterioso)))
- '(desktop-path (quote (".")))
- '(package-selected-packages
-   (quote
-    (cider clojure-mode projectile better-defaults markdown-preview-mode go-mode))))
+;; theme loading
 
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "gray15" :foreground "light steel blue" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "unknown" :family "DejaVu Sans Mono"))))
- '(cursor ((t (:background "orange red")))))
+;; makes all themes trusted
+(setq custom-safe-themes t)
+
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/ample-zen/")
+;;(load-theme 'ample-zen t)
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/clues/")
+;;(load-theme 'clues t)
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/cyberpunk/")
+;;(load-theme 'cyberpunk t)
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/grandshell/")
+;;(load-theme 'grandshell t)
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/soothe/")
+(load-theme 'soothe t)
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/monokai/")
+;;(load-theme 'monokai t)
+
