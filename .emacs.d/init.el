@@ -75,6 +75,11 @@
   ;; set the keys to use as targets to dvorak home row
   (setq avy-keys '(?a ?o ?e ?u ?h ?t ?n ?s)))
 
+(require 'company)
+(progn
+  (add-hook 'after-init-hook 'global-company-mode)
+  (global-set-key (kbd "M-\\") 'company-complete))
+
 ;;(package-initialize)
 ;;(require 'go-mode-autoloads)
 
