@@ -40,3 +40,18 @@
 [submodule ".emacs.d/git/org-mode"]
 	path = .emacs.d/git/org-mode
 	url = git://orgmode.org/org-mode.git
+[submodule ".emacs.d/git/php-mode"]
+	path = .emacs.d/git/php-mode
+	url = https://github.com/ejmr/php-mode.git
+[submodule ".emacs.d/git/web-mode"]
+	path = .emacs.d/git/web-mode
+	url = https://github.com/fxbois/web-mode.git
+[submodule ".emacs.d/git/flycheck"]
+	path = .emacs.d/git/flycheck
+	url = https://github.com/flycheck/flycheck.git
+[submodule ".emacs.d/git/yasnippet"]
+	path = .emacs.d/git/yasnippet
+	url = https://github.com/joaotavora/yasnippet.git
+[submodule ".emacs.d/git/restclient"]
+	path = .emacs.d/git/restclient
+	url = https://github.com/pashky/restclient.el.git
