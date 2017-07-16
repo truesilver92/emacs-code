@@ -58,3 +58,6 @@
 [submodule ".emacs.d/git/quickrun"]
 	path = .emacs.d/git/quickrun
 	url = https://github.com/syohex/emacs-quickrun.git
+[submodule ".emacs.d/git/expand-region"]
+	path = .emacs.d/git/expand-region
+	url = https://github.com/magnars/expand-region.el.git
