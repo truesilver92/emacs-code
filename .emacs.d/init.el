@@ -89,7 +89,9 @@
 
 (require 'org-bullets)
 (progn
-  (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
+  (add-hook 'org-mode-hook (lambda ()
+                             (org-bullets-mode 1)
+                             (auto-fill-mode))))
 
 ;;(package-initialize)
 ;;(require 'go-mode-autoloads)
