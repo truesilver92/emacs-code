@@ -1,5 +1,12 @@
 ;; set character encoding
 (set-language-environment "UTF-8")
+
+;; set the fontsize
+(set-face-attribute 'default nil :height 140)
+
+;; turn on the menu bar (so it is easier to learn the shortcuts)
+(add-hook 'after-init-hook (lambda () (menu-bar-mode 1)))
+
 (setq debug-on-error t)
 ;; init the package manager
 (require 'package)
