@@ -2,7 +2,7 @@
 (set-language-environment "UTF-8")
 
 ;; set the fontsize
-(set-face-attribute 'default nil :height 140)
+(set-face-attribute 'default nil :height 110)
 
 ;; turn on the menu bar (so it is easier to learn the shortcuts)
 (add-hook 'after-init-hook (lambda () (menu-bar-mode 1)))
@@ -85,7 +85,7 @@
 (require 'company)
 (progn
   (add-hook 'after-init-hook 'global-company-mode)
-  (global-set-key (kbd "M-\\") 'company-complete))
+  (global-set-key (kbd "M-/") 'company-complete))
 
 (require 'org-bullets)
 (progn
