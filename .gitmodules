@@ -89,3 +89,6 @@
 [submodule ".emacs.d/git/org-bullets"]
 	path = .emacs.d/git/org-bullets
 	url = https://github.com/emacsorphanage/org-bullets.git
+[submodule ".emacs.d/git/yaml-mode"]
+	path = .emacs.d/git/yaml-mode
+	url = https://github.com/yoshiki/yaml-mode.git
