@@ -77,8 +77,8 @@
 (require 'avy)
 (progn
   ;; set keybindings for the awesome search types
-  (global-set-key (kbd "C-c r") 'avy-goto-char)
-  (global-set-key (kbd "C-c s") 'avy-goto-char-2)
+  (global-set-key (kbd "C-c s") 'avy-goto-char)
+  (global-set-key (kbd "C-c r") 'avy-goto-char-2)
   ;; set the keys to use as targets to dvorak home row
   (setq avy-keys '(?a ?o ?e ?u ?h ?t ?n ?s)))
 
@@ -99,6 +99,10 @@
   (add-hook 'yaml-mode-hook
             '(lambda ()
                (define-key yaml-mode-map "\C-m" 'newline-and-indent))))
+
+(require 'php-mode)
+(progn
+  (add-to-list 'auto-mode-alist '("\\.php\\'" . php-mode)))
 
 ;;(package-initialize)
 ;;(require 'go-mode-autoloads)
