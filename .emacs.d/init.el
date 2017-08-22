@@ -104,6 +104,8 @@
 (progn
   (add-to-list 'auto-mode-alist '("\\.php\\'" . php-mode)))
 
+(require 'graphql-mode)
+
 ;;(package-initialize)
 ;;(require 'go-mode-autoloads)
 
@@ -133,3 +135,15 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/monokai/")
 ;;(load-theme 'monokai t)
 
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(magit-commit-arguments (quote ("--gpg-sign=joel@ec2software.com"))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

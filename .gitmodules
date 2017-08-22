@@ -92,3 +92,6 @@
 [submodule ".emacs.d/git/yaml-mode"]
 	path = .emacs.d/git/yaml-mode
 	url = https://github.com/yoshiki/yaml-mode.git
+[submodule ".emacs.d/git/graphql-mode"]
+	path = .emacs.d/git/graphql-mode
+	url = https://github.com/davazp/graphql-mode.git
