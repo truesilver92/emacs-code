@@ -98,3 +98,6 @@
 [submodule ".emacs.d/git/csharp-mode"]
 	path = .emacs.d/git/csharp-mode
 	url = https://github.com/josteink/csharp-mode.git
+[submodule ".emacs.d/git/omnisharp-emacs"]
+	path = .emacs.d/git/omnisharp-emacs
+	url = https://github.com/OmniSharp/omnisharp-emacs.git
