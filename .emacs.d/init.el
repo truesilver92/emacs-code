@@ -110,10 +110,6 @@
 (progn
   (add-to-list 'auto-mode-alist '("\\.cs\\'" . csharp-mode)))
 
-(require 'omnisharp-mode)
-(progn
-  (add-to-list 'company-backends 'company-omnisharp))
-
 ;;(package-initialize)
 ;;(require 'go-mode-autoloads)
 
