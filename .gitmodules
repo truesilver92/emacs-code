@@ -95,3 +95,6 @@
 [submodule ".emacs.d/git/graphql-mode"]
 	path = .emacs.d/git/graphql-mode
 	url = https://github.com/davazp/graphql-mode.git
+[submodule ".emacs.d/git/csharp-mode"]
+	path = .emacs.d/git/csharp-mode
+	url = https://github.com/josteink/csharp-mode.git

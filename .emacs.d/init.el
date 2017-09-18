@@ -106,6 +106,10 @@
 
 (require 'graphql-mode)
 
+(require 'csharp-mode)
+(progn
+  (add-to-list 'auto-mode-alist '("\\.cs\\'" . csharp-mode)))
+
 ;;(package-initialize)
 ;;(require 'go-mode-autoloads)
 
