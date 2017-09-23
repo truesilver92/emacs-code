@@ -7,6 +7,9 @@
 ;; turn on the menu bar (so it is easier to learn the shortcuts)
 (add-hook 'after-init-hook (lambda () (menu-bar-mode 1)))
 
+;; let more than one emacsclient frame have the same buffer open
+(setq ido-default-buffer-method 'selected-window)
+
 (setq debug-on-error t)
 ;; init the package manager
 (require 'package)
