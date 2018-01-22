@@ -113,6 +113,10 @@
 (progn
   (add-to-list 'auto-mode-alist '("\\.cs\\'" . csharp-mode)))
 
+(require 'julia-mode)
+(progn
+  (add-to-list 'auto-mode-alist '("\\.jl\\'" . julia-mode)))
+
 ;;(package-initialize)
 ;;(require 'go-mode-autoloads)
 
