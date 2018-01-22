@@ -101,3 +101,6 @@
 [submodule ".emacs.d/git/omnisharp-emacs"]
 	path = .emacs.d/git/omnisharp-emacs
 	url = https://github.com/OmniSharp/omnisharp-emacs.git
+[submodule ".emacs.d/git/julia-emacs"]
+	path = .emacs.d/git/julia-emacs
+	url = https://github.com/JuliaEditorSupport/julia-emacs.git
