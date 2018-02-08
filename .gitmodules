@@ -104,3 +104,6 @@
 [submodule ".emacs.d/git/julia-emacs"]
 	path = .emacs.d/git/julia-emacs
 	url = https://github.com/JuliaEditorSupport/julia-emacs.git
+[submodule ".emacs.d/git/markdown-mode"]
+	path = .emacs.d/git/markdown-mode
+	url = https://github.com/jrblevin/markdown-mode.git
