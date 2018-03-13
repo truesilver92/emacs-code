@@ -117,6 +117,10 @@
 (progn
   (add-to-list 'auto-mode-alist '("\\.jl\\'" . julia-mode)))
 
+(require 'markdown-mode)
+(progn
+  (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode)))
+
 ;;(package-initialize)
 ;;(require 'go-mode-autoloads)
 
