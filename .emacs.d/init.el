@@ -121,6 +121,11 @@
 (progn
   (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode)))
 
+(require 'elixir-mode)
+(progn
+  (add-to-list 'auto-mode-alist '("\\.ex\\'" . elixir-mode))
+  (add-to-list 'auto-mode-alist '("\\.exs\\'" . elixir-mode))))
+
 ;;(package-initialize)
 ;;(require 'go-mode-autoloads)
 

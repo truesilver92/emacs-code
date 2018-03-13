@@ -107,3 +107,6 @@
 [submodule ".emacs.d/git/markdown-mode"]
 	path = .emacs.d/git/markdown-mode
 	url = https://github.com/jrblevin/markdown-mode.git
+[submodule ".emacs.d/git/emacs-elixir"]
+	path = .emacs.d/git/emacs-elixir
+	url = https://github.com/elixir-editors/emacs-elixir.git
