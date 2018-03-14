@@ -11,20 +11,14 @@
 (setq ido-default-buffer-method 'selected-window)
 
 (setq debug-on-error t)
-;; init the package manager
-(require 'package)
 
-(add-to-list 'package-archives
-;	     '("melpa-unstable" . "http://melpa.org/packages/")
-	     '("marmalade" . "https://marmalade-repo.org/packages/")
-	     '("melpa-stable" . "http://melpa-stable.org/packages/"))
 ;;(add-to-list 'load-path "/home/joel/emacs-code/.emacs.d/go-mode.el/go-mode.el")
 ;;(add-to-list 'load-path "/home/joel/emacs-code/.emacs.d/go-mode-autoloads.el")
 
 ;; auto install of packages I want
 ;;(defvar my-packages '(paredit))
 
-;;(package-initialize) ; so package management works
+(package-initialize) ; so package management works
 
 ;;(package-refresh-contents)
 
@@ -124,7 +118,7 @@
 (require 'elixir-mode)
 (progn
   (add-to-list 'auto-mode-alist '("\\.ex\\'" . elixir-mode))
-  (add-to-list 'auto-mode-alist '("\\.exs\\'" . elixir-mode))))
+  (add-to-list 'auto-mode-alist '("\\.exs\\'" . elixir-mode)))
 
 ;;(package-initialize)
 ;;(require 'go-mode-autoloads)
