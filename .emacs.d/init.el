@@ -121,9 +121,12 @@
   (add-to-list 'auto-mode-alist '("\\.ex\\'" . elixir-mode))
   (add-to-list 'auto-mode-alist '("\\.exs\\'" . elixir-mode)))
 
-(require 'haskell-mode)
+;;(require 'haskell-mode)
 (progn
-  (add-to-list 'auto-mode-alist '("\\.hs\\'" . haskell-mode)))
+  ;;(add-to-list 'auto-mode-alist '("\\.hs\\'" . haskell-mode))
+  (add-to-list 'load-path "~/.emacs.d/git/haskell-mode/")
+  (require 'haskell-mode)
+  (add-to-list 'Info-default-directory-list "~/.emacs.d/git/haskell-mode/"))
 
 ;;(package-initialize)
 ;;(require 'go-mode-autoloads)
