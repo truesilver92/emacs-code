@@ -110,3 +110,6 @@
 [submodule ".emacs.d/git/emacs-elixir"]
 	path = .emacs.d/git/emacs-elixir
 	url = https://github.com/elixir-editors/emacs-elixir.git
+[submodule ".emacs.d/git/haskell-mode"]
+	path = .emacs.d/git/haskell-mode
+	url = https://github.com/haskell/haskell-mode.git
