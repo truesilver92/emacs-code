@@ -121,12 +121,16 @@
   (add-to-list 'auto-mode-alist '("\\.ex\\'" . elixir-mode))
   (add-to-list 'auto-mode-alist '("\\.exs\\'" . elixir-mode)))
 
+(progn ; settings for cc mode (c/c++...)
+  (setq c-default-style "linux" ; change indentation style
+        c-basic-offset 2))
+
 ;;(require 'haskell-mode)
-(progn
+;;(progn
   ;;(add-to-list 'auto-mode-alist '("\\.hs\\'" . haskell-mode))
-  (add-to-list 'load-path "~/.emacs.d/git/haskell-mode/")
-  (require 'haskell-mode)
-  (add-to-list 'Info-default-directory-list "~/.emacs.d/git/haskell-mode/"))
+  ;;(add-to-list 'load-path "~/.emacs.d/git/haskell-mode/")
+  ;;(require 'haskell-mode)
+  ;;(add-to-list 'Info-default-directory-list "~/.emacs.d/git/haskell-mode/"))
 
 ;;(package-initialize)
 ;;(require 'go-mode-autoloads)
@@ -162,7 +166,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(magit-commit-arguments (quote ("--gpg-sign=joel@ec2software.com"))))
+ '(magit-commit-arguments (quote ("--gpg-sign=joel@ec2software.com")))
+ '(package-selected-packages
+   (quote
+    (projectile php-mode paredit markdown-preview-mode go-mode geiser cider better-defaults))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
