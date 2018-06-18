@@ -113,3 +113,9 @@
 [submodule ".emacs.d/git/haskell-mode"]
 	path = .emacs.d/git/haskell-mode
 	url = https://github.com/haskell/haskell-mode.git
+[submodule ".emacs.d/git/epl"]
+	path = .emacs.d/git/epl
+	url = https://github.com/cask/epl.git
+[submodule "pkg-info"]
+	path = .emacs.d/git/pkg-info
+	url = https://github.com/lunaryorn/pkg-info.el.git
