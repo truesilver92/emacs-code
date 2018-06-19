@@ -1,11 +1,13 @@
 ;; set character encoding
 (set-language-environment "UTF-8")
 
+(setq column-number-mode t)
+
 ;; set the fontsize
 (set-face-attribute 'default nil :height 110)
 
-;; turn on the menu bar (so it is easier to learn the shortcuts)
-(add-hook 'after-init-hook (lambda () (menu-bar-mode 1)))
+;; turn off menu
+(add-hook 'after-init-hook (lambda () (menu-bar-mode 0)))
 
 ;; let more than one emacsclient frame have the same buffer open
 (setq ido-default-buffer-method 'selected-window)
