@@ -12,7 +12,7 @@
 	url = https://github.com/magit/magit.git
 [submodule ".emacs.d/git/geiser"]
 	path = .emacs.d/git/geiser
-	url = https://github.com/jaor/geiser.git
+	url = https://gitlab.com/jaor/geiser.git
 [submodule "git/exec-path-from-shell"]
 	path = git/exec-path-from-shell
 	url = https://github.com/purcell/exec-path-from-shell.git
