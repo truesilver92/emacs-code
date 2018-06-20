@@ -119,3 +119,6 @@
 [submodule "pkg-info"]
 	path = .emacs.d/git/pkg-info
 	url = https://github.com/lunaryorn/pkg-info.el.git
+[submodule ".emacs.d/git/ghub"]
+	path = .emacs.d/git/ghub
+	url = https://github.com/magit/ghub.git
