@@ -116,3 +116,6 @@
 [submodule ".emacs.d/git/ghub"]
 	path = .emacs.d/git/ghub
 	url = https://github.com/magit/ghub.git
+[submodule "magit-popup"]
+	path = .emacs.d/git/magit-popup
+	url = https://github.com/magit/magit-popup.git
