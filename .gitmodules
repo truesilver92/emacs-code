@@ -37,9 +37,6 @@
 [submodule ".emacs.d/git/predictive"]
 	path = .emacs.d/git/predictive
 	url = http://www.dr-qubit.org/git/predictive.git
-[submodule ".emacs.d/git/org-mode"]
-	path = .emacs.d/git/org-mode
-	url = git://orgmode.org/org-mode.git
 [submodule ".emacs.d/git/php-mode"]
 	path = .emacs.d/git/php-mode
 	url = https://github.com/ejmr/php-mode.git
@@ -73,9 +70,6 @@
 [submodule ".emacs.d/themes/cyberpunk"]
 	path = .emacs.d/themes/cyberpunk
 	url = https://github.com/n3mo/cyberpunk-theme.el.git
-[submodule ".emacs.d/themes/grandshell"]
-	path = .emacs.d/themes/grandshell
-	url = https://github.com/steckerhalter/grandshell-theme.git
 [submodule "ample-zen"]
 	path = .emacs.d/themes/ample-zen
 	url = https://github.com/mjwall/ample-zen.git
