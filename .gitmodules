@@ -119,3 +119,6 @@
 [submodule "magit-popup"]
 	path = .emacs.d/git/magit-popup
 	url = https://github.com/magit/magit-popup.git
+[submodule ".emacs.d/git/sesman"]
+	path = .emacs.d/git/sesman
+	url = https://github.com/vspinu/sesman.git
