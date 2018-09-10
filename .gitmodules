@@ -122,3 +122,6 @@
 [submodule ".emacs.d/git/sesman"]
 	path = .emacs.d/git/sesman
 	url = https://github.com/vspinu/sesman.git
+[submodule ".emacs.d/git/rjsx-mode"]
+	path = .emacs.d/git/rjsx-mode
+	url = https://github.com/felipeochoa/rjsx-mode.git
