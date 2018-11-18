@@ -4,7 +4,7 @@
 (setq column-number-mode t)
 
 ;; set the fontsize
-(set-face-attribute 'default nil :height 110)
+(set-face-attribute 'default nil :height 180)
 
 ;; turn off menu
 (add-hook 'after-init-hook (lambda () (menu-bar-mode 0)))
