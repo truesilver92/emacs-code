@@ -35,7 +35,18 @@ There are two things you can do about this warning:
   (let ()
     (exec-path-from-shell-copy-env "SSH_AGENT_PID")
     (exec-path-from-shell-copy-env "SSH_AUTH_SOCK")))
-
+(use-package cider)
+(use-package clojure-mode)
+(use-package paredit
+  :init
+  (let ()
+    (autoload 'enable-paredit-mode "paredit" "Turn on pseudo-structural editing of Lisp code." t)
+    (add-hook 'emacs-lisp-mode-hook       #'enable-paredit-mode)
+    (add-hook 'eval-expression-minibuffer-setup-hook #'enable-paredit-mode)
+    (add-hook 'ielm-mode-hook             #'enable-paredit-mode)
+    (add-hook 'lisp-mode-hook             #'enable-paredit-mode)
+    (add-hook 'lisp-interaction-mode-hook #'enable-paredit-mode)
+    (add-hook 'scheme-mode-hook           #'enable-paredit-mode)))
 
 ;; set character encoding
 (set-language-environment "UTF-8")
@@ -58,21 +69,6 @@ There are two things you can do about this warning:
 ;  (normal-top-level-add-subdirs-to-load-path))
 
 ;(require 'geiser)
-
-(require 'cider)
-
-(require 'clojure-mode)
-
-(require 'paredit)
-;; paredit code
-(let ()
-  (autoload 'enable-paredit-mode "paredit" "Turn on pseudo-structural editing of Lisp code." t)
-  (add-hook 'emacs-lisp-mode-hook       #'enable-paredit-mode)
-  (add-hook 'eval-expression-minibuffer-setup-hook #'enable-paredit-mode)
-  (add-hook 'ielm-mode-hook             #'enable-paredit-mode)
-  (add-hook 'lisp-mode-hook             #'enable-paredit-mode)
-  (add-hook 'lisp-interaction-mode-hook #'enable-paredit-mode)
-  (add-hook 'scheme-mode-hook           #'enable-paredit-mode))
 
 (require 'projectile)
 
