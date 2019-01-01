@@ -22,6 +22,21 @@ There are two things you can do about this warning:
 (eval-when-compile
   (require 'use-package))
 
+(use-package better-defaults)
+(use-package magit
+  :bind ("C-x g" . magit-status)
+  :config
+  (with-eval-after-load 'info
+    (info-initialize)
+    (add-to-list 'Info-directory-list
+		 "~/.emacs.d/git/magit/Documentation/")))
+(use-package exec-path-from-shell
+  :config
+  (let ()
+    (exec-path-from-shell-copy-env "SSH_AGENT_PID")
+    (exec-path-from-shell-copy-env "SSH_AUTH_SOCK")))
+
+
 ;; set character encoding
 (set-language-environment "UTF-8")
 
@@ -38,45 +53,11 @@ There are two things you can do about this warning:
 
 (setq debug-on-error t)
 
-;;(add-to-list 'load-path "/home/joel/emacs-code/.emacs.d/go-mode.el/go-mode.el")
-;;(add-to-list 'load-path "/home/joel/emacs-code/.emacs.d/go-mode-autoloads.el")
-
-;; auto install of packages I want
-;;(defvar my-packages '(paredit))
-
-(package-initialize) ; so package management works
-
-;;(package-refresh-contents)
-
-;;(dolist (p my-packages)
-;;  (unless (package-installed-p p)
-;;    (package-install p)))
-
 ;;add all files in the git directory to the load-path
-(let ((default-directory  "~/projects/emacs-code/.emacs.d/git"))
-  (normal-top-level-add-subdirs-to-load-path))
+;(let ((default-directory  "~/projects/emacs-code/.emacs.d/git"))
+;  (normal-top-level-add-subdirs-to-load-path))
 
-;;load the project in the git subdirectory changing some default behavior of emacs
-(require 'better-defaults)
-;; a git porcelain
-(require 'magit)
-;; magit stuff
-(let ()
- (global-set-key (kbd "C-x g") 'magit-status))
-
-;; magit wanted this I think for its documentation
-(with-eval-after-load 'info
-  (info-initialize)
-  (add-to-list 'Info-directory-list
-               "~/.emacs.d/git/magit/Documentation/"))
-
-(require 'geiser)
-
-;; this makes my ssh-agent work with magit
-(require 'exec-path-from-shell)
-(let ()
-  (exec-path-from-shell-copy-env "SSH_AGENT_PID")
-  (exec-path-from-shell-copy-env "SSH_AUTH_SOCK"))
+;(require 'geiser)
 
 (require 'cider)
 
