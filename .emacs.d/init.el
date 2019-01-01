@@ -47,6 +47,9 @@ There are two things you can do about this warning:
     (add-hook 'lisp-mode-hook             #'enable-paredit-mode)
     (add-hook 'lisp-interaction-mode-hook #'enable-paredit-mode)
     (add-hook 'scheme-mode-hook           #'enable-paredit-mode)))
+(use-package projectile
+  :bind-keymap ("C-c p" . projectile-command-map)
+  :config (projectile-mode +1))
 
 ;; set character encoding
 (set-language-environment "UTF-8")
@@ -69,8 +72,6 @@ There are two things you can do about this warning:
 ;  (normal-top-level-add-subdirs-to-load-path))
 
 ;(require 'geiser)
-
-(require 'projectile)
 
 (require 'quickrun)
 
