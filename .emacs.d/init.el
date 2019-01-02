@@ -69,6 +69,9 @@ There are two things you can do about this warning:
   :mode "\\.cs\\'")
 (use-package julia-mode
   :mode "\\.jl\\'")
+(use-package markdown-mode
+  :config (setq markdown-command "pandoc")
+  :mode "\\.md\\'")
 
 ;; set character encoding
 (set-language-environment "UTF-8")
@@ -91,11 +94,6 @@ There are two things you can do about this warning:
 ;  (normal-top-level-add-subdirs-to-load-path))
 
 ;(require 'geiser)
-
-(require 'markdown-mode)
-(progn
-  (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
-  (setq markdown-command "pandoc"))
 
 (require 'elixir-mode)
 (progn
