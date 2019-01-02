@@ -58,7 +58,10 @@ There are two things you can do about this warning:
 (use-package company
   :init (global-company-mode)
   :bind ("M-/" . company-complete))
-
+(use-package org-bullets
+  :hook (org-mode . (lambda ()
+		      (org-bullets-mode 1)
+		      (auto-fill-mode))))
 
 ;; set character encoding
 (set-language-environment "UTF-8")
@@ -81,12 +84,6 @@ There are two things you can do about this warning:
 ;  (normal-top-level-add-subdirs-to-load-path))
 
 ;(require 'geiser)
-
-(require 'org-bullets)
-(progn
-  (add-hook 'org-mode-hook (lambda ()
-                             (org-bullets-mode 1)
-                             (auto-fill-mode))))
 
 (require 'yaml-mode)
 (progn
