@@ -74,6 +74,8 @@ There are two things you can do about this warning:
   :mode "\\.md\\'")
 (use-package elixir-mode
   :mode ("\\.ex\\'" "\\.exs\\'"))
+(use-package haskell-mode
+  :mode "\\.hs\\'")
 
 ;; set character encoding
 (set-language-environment "UTF-8")
@@ -100,16 +102,6 @@ There are two things you can do about this warning:
 (progn ; settings for cc mode (c/c++...)
   (setq c-default-style "linux" ; change indentation style
         c-basic-offset 2))
-
-;;(require 'haskell-mode)
-;;(progn
-  ;;(add-to-list 'auto-mode-alist '("\\.hs\\'" . haskell-mode))
-  ;;(add-to-list 'load-path "~/.emacs.d/git/haskell-mode/")
-  ;;(require 'haskell-mode)
-  ;;(add-to-list 'Info-default-directory-list "~/.emacs.d/git/haskell-mode/"))
-
-;;(package-initialize)
-;;(require 'go-mode-autoloads)
 
 ; gets rid of the blinking cursor because I hate it
 (blink-cursor-mode 0)
