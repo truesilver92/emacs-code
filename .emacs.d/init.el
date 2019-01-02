@@ -39,11 +39,11 @@ There are two things you can do about this warning:
 (use-package clojure-mode)
 (use-package paredit
   :hook ((emacs-lisp-mode
-	   eval-expression-minibuffer-setup
-	   ielm-mode
-	   lisp-mode
-	   lisp-interaction-mode
-	   scheme-mode) . paredit-mode))
+	  eval-expression-minibuffer-setup
+	  ielm-mode
+	  lisp-mode
+	  lisp-interaction-mode
+	  scheme-mode) . paredit-mode))
 (use-package projectile
   :bind-keymap ("C-c p" . projectile-command-map)
   :config (projectile-mode +1))
