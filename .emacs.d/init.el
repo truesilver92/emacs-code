@@ -59,7 +59,11 @@ There are two things you can do about this warning:
   :hook (org-mode . (lambda ()
 		      (org-bullets-mode 1)
 		      (auto-fill-mode))))
-
+(use-package yaml-mode
+  :mode ("\\.yml\\'" "\\.yaml\\'")
+  :bind ("C-m" . newline-and-indent))
+(use-package php-mode
+  :mode "\\.php\\'")
 
 ;; set character encoding
 (set-language-environment "UTF-8")
@@ -82,17 +86,6 @@ There are two things you can do about this warning:
 ;  (normal-top-level-add-subdirs-to-load-path))
 
 ;(require 'geiser)
-
-(require 'yaml-mode)
-(progn
-  (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
-  (add-hook 'yaml-mode-hook
-            '(lambda ()
-               (define-key yaml-mode-map "\C-m" 'newline-and-indent))))
-
-(require 'php-mode)
-(progn
-  (add-to-list 'auto-mode-alist '("\\.php\\'" . php-mode)))
 
 (require 'graphql-mode)
 
