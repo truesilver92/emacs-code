@@ -55,6 +55,10 @@ There are two things you can do about this warning:
 	 ("C-c r" . avy-goto-char-2))
   :config
   (setq avy-keys '(?a ?o ?e ?u ?h ?t ?n ?s)))
+(use-package company
+  :init (global-company-mode)
+  :bind ("M-/" . company-complete))
+
 
 ;; set character encoding
 (set-language-environment "UTF-8")
@@ -77,11 +81,6 @@ There are two things you can do about this warning:
 ;  (normal-top-level-add-subdirs-to-load-path))
 
 ;(require 'geiser)
-
-(require 'company)
-(progn
-  (add-hook 'after-init-hook 'global-company-mode)
-  (global-set-key (kbd "M-/") 'company-complete))
 
 (require 'org-bullets)
 (progn
