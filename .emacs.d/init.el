@@ -111,22 +111,23 @@ There are two things you can do about this warning:
 ;; multiple spaces instead of tabs by default
 (setq-default indent-tabs-mode nil)
 
-;; theme loading
-
 ;; makes all themes trusted
 (setq custom-safe-themes t)
 
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/ample-zen/")
-(load-theme 'ample-zen t)
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/clues/")
+(use-package ample-zen-theme
+  :init (load-theme 'ample-zen t))
+
+;;(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/ample-zen/")
+;;(load-theme 'ample-zen t)
+;;(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/clues/")
 ;;(load-theme 'clues t)
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/cyberpunk/")
+;;(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/cyberpunk/")
 ;;(load-theme 'cyberpunk t)
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/grandshell/")
+;;(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/grandshell/")
 ;;(load-theme 'grandshell t)
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/soothe/")
+;;(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/soothe/")
 ;;(load-theme 'soothe t)
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/monokai/")
+;;(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/monokai/")
 ;;(load-theme 'monokai t)
 
 (custom-set-variables
