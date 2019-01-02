@@ -50,6 +50,11 @@ There are two things you can do about this warning:
 (use-package projectile
   :bind-keymap ("C-c p" . projectile-command-map)
   :config (projectile-mode +1))
+(use-package avy
+  :bind (("C-c s" . avy-goto-char)
+	 ("C-c r" . avy-goto-char-2))
+  :config
+  (setq avy-keys '(?a ?o ?e ?u ?h ?t ?n ?s)))
 
 ;; set character encoding
 (set-language-environment "UTF-8")
@@ -72,16 +77,6 @@ There are two things you can do about this warning:
 ;  (normal-top-level-add-subdirs-to-load-path))
 
 ;(require 'geiser)
-
-(require 'quickrun)
-
-(require 'avy)
-(progn
-  ;; set keybindings for the awesome search types
-  (global-set-key (kbd "C-c s") 'avy-goto-char)
-  (global-set-key (kbd "C-c r") 'avy-goto-char-2)
-  ;; set the keys to use as targets to dvorak home row
-  (setq avy-keys '(?a ?o ?e ?u ?h ?t ?n ?s)))
 
 (require 'company)
 (progn
