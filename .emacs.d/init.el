@@ -64,6 +64,11 @@ There are two things you can do about this warning:
   :bind ("C-m" . newline-and-indent))
 (use-package php-mode
   :mode "\\.php\\'")
+(use-package graphql-mode)
+(use-package csharp-mode
+  :mode "\\.cs\\'")
+(use-package julia-mode
+  :mode "\\.jl\\'")
 
 ;; set character encoding
 (set-language-environment "UTF-8")
@@ -86,16 +91,6 @@ There are two things you can do about this warning:
 ;  (normal-top-level-add-subdirs-to-load-path))
 
 ;(require 'geiser)
-
-(require 'graphql-mode)
-
-(require 'csharp-mode)
-(progn
-  (add-to-list 'auto-mode-alist '("\\.cs\\'" . csharp-mode)))
-
-(require 'julia-mode)
-(progn
-  (add-to-list 'auto-mode-alist '("\\.jl\\'" . julia-mode)))
 
 (require 'markdown-mode)
 (progn
