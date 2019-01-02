@@ -72,6 +72,8 @@ There are two things you can do about this warning:
 (use-package markdown-mode
   :config (setq markdown-command "pandoc")
   :mode "\\.md\\'")
+(use-package elixir-mode
+  :mode ("\\.ex\\'" "\\.exs\\'"))
 
 ;; set character encoding
 (set-language-environment "UTF-8")
@@ -94,11 +96,6 @@ There are two things you can do about this warning:
 ;  (normal-top-level-add-subdirs-to-load-path))
 
 ;(require 'geiser)
-
-(require 'elixir-mode)
-(progn
-  (add-to-list 'auto-mode-alist '("\\.ex\\'" . elixir-mode))
-  (add-to-list 'auto-mode-alist '("\\.exs\\'" . elixir-mode)))
 
 (progn ; settings for cc mode (c/c++...)
   (setq c-default-style "linux" ; change indentation style
