@@ -79,7 +79,7 @@ There are two things you can do about this warning:
 (use-package haskell-mode
   :mode "\\.hs\\'")
 (use-package rjsx-mode
-  :hook "\\.js\\'")
+  :mode "\\.js\\'")
 (use-package racket-mode
   :hook ((racket-mode racket-repl-mode) . racket-unicode-input-method-enable)
   :bind (("M-/" . complete-symbol)
@@ -144,7 +144,7 @@ There are two things you can do about this warning:
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(org-export-backends (quote (ascii beamer html icalendar latex md odt org)))))
+ '(org-export-backends (quote (ascii beamer html icalendar latex md odt org))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
