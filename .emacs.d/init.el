@@ -82,8 +82,7 @@ There are two things you can do about this warning:
   :mode "\\.js\\'")
 (use-package racket-mode
   :hook ((racket-mode racket-repl-mode) . racket-unicode-input-method-enable)
-  :bind (("M-/" . complete-symbol)
-         ("{" . paredit-open-curly)
+  :bind (("{" . paredit-open-curly)
          ("}" . paredit-close-curly)))
 
 ;; set character encoding
