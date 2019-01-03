@@ -43,7 +43,8 @@ There are two things you can do about this warning:
 	  ielm-mode
 	  lisp-mode
 	  lisp-interaction-mode
-	  scheme-mode) . paredit-mode))
+	  scheme-mode
+          racket-mode) . paredit-mode))
 (use-package projectile
   :bind-keymap ("C-c p" . projectile-command-map)
   :config (projectile-mode +1))
@@ -77,6 +78,11 @@ There are two things you can do about this warning:
 (use-package haskell-mode
   :mode "\\.hs\\'")
 (use-package jsx-mode)
+(use-package racket-mode
+  :hook ((racket-mode racket-repl-mode) . racket-unicode-input-method-enable)
+  :bind (("M-/" . complete-symbol)
+         ("{" . paredit-open-curly)
+         ("}" . paredit-close-curly)))
 
 ;; set character encoding
 (set-language-environment "UTF-8")
@@ -139,7 +145,7 @@ There are two things you can do about this warning:
  '(org-export-backends (quote (ascii beamer html icalendar latex md odt org)))
  '(package-selected-packages
    (quote
-    (jsx-mode use-package projectile php-mode paredit markdown-preview-mode go-mode geiser cider better-defaults))))
+    (racket-mode jsx-mode use-package projectile php-mode paredit markdown-preview-mode go-mode geiser cider better-defaults))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
