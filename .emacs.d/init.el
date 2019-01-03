@@ -76,6 +76,7 @@ There are two things you can do about this warning:
   :mode ("\\.ex\\'" "\\.exs\\'"))
 (use-package haskell-mode
   :mode "\\.hs\\'")
+(use-package jsx-mode)
 
 ;; set character encoding
 (set-language-environment "UTF-8")
@@ -138,7 +139,7 @@ There are two things you can do about this warning:
  '(org-export-backends (quote (ascii beamer html icalendar latex md odt org)))
  '(package-selected-packages
    (quote
-    (use-package projectile php-mode paredit markdown-preview-mode go-mode geiser cider better-defaults))))
+    (jsx-mode use-package projectile php-mode paredit markdown-preview-mode go-mode geiser cider better-defaults))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
